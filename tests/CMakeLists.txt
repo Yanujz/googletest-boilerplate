@@ -8,13 +8,9 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-enable_testing()
-# Define the test executable
-
-# Collect C and C++ source files recursively
-file(GLOB_RECURSE C_FILES "${CMAKE_CURRENT_LIST_DIR}/*.c")
+# Collect  C++ source files recursively
 file(GLOB_RECURSE CXX_FILES "${CMAKE_CURRENT_LIST_DIR}/*.cpp")
-add_executable(unit_tests ${C_FILES} ${CXX_FILES})
+add_executable(unit_tests ${CXX_FILES})
 
 # Link GoogleTest libraries
 target_link_libraries(unit_tests
