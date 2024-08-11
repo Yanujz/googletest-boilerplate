@@ -9,5 +9,4 @@ add_library(${MAIN_PROJECT_LIBNAME} STATIC
 # Add main executable
 add_executable(${PROJECT_NAME} main.c)
 
-message(${MAIN_PROJECT_LIBNAME})
 target_link_libraries(${PROJECT_NAME} ${MAIN_PROJECT_LIBNAME})
