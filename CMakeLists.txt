@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.14)
 project(googletest-boilerplate VERSION 0.1.0 LANGUAGES C CXX)
 
 # Set the C and C++ standards
